@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios JavaScript</title>
+    <link rel="stylesheet" href="Practicas JS.css">
+</head>
+<body>
+    <h1>Ejercicios JavaScript</h1>
+
+    <!-- Sección 1: Cálculo de Interés Mensual -->
+    <section>
+        <h1>Cálculo de Interés Mensual</h1>
+        <label for="capital">Capital inicial:</label>
+        <input type="number" id="capital" placeholder="Ingrese el capital">
+        <button onclick="calcularInteres()">Calcular</button>
+        <p id="resultadoInteres"></p>
+    </section>
+
+    <!-- Sección 2: Cálculo de Comisiones -->
+    <section>
+        <h1>Cálculo de Comisiones</h1>
+        <label for="sueldoBase">Sueldo base:</label>
+        <input type="number" id="sueldoBase" placeholder="Ingrese el sueldo base" required>
+        
+        <label for="ventas">Ventas (separadas por comas):</label>
+        <input type="text" id="ventas" placeholder="Ej. 100, 200, 300" required>
+        
+        <button onclick="calcularComisiones()">Calcular</button>
+        <p id="resultadoComisiones"></p>
+    </section>
+
+
+    <!-- Sección 3: Descuento en Compra -->
+    <section>
+        <h1>Descuento en Compra</h1>
+        <label for="precio">Precio de la compra:</label>
+        <input type="number" id="precio" placeholder="Ingrese el precio" min="0" step="0.01">
+        <button onclick="calcularDescuento()">Calcular</button>
+        <p id="resultadoDescuento"></p>
+    </section>
+
+    <!-- Sección 4: Calificación Final -->
+    <section>
+        <h1>Calificación Final</h1>
+        <label for="parciales">Promedio de las tres calificaciones parciales:</label>
+        <input type="number" id="parciales" placeholder="Ingrese el promedio" step="0.01" min="0">
+        <label for="examenFinal">Calificación del examen final:</label>
+        <input type="number" id="examenFinal" placeholder="Ingrese la calificación" step="0.01" min="0">
+        <label for="trabajoFinal">Calificación del trabajo final:</label>
+        <input type="number" id="trabajoFinal" placeholder="Ingrese la calificación" step="0.01" min="0">
+        <button onclick="calcularCalificacionFinal()">Calcular</button>
+        <p id="resultado"></p>
+    </section>
+
+    <!-- Sección 5: Cálculo de Edad -->
+    <section>
+        <h1>Cálculo de Edad</h1>
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" id="fechaNacimiento">
+        <button onclick="calcularEdad()">Calcular</button>
+        <p id="resultadoEdad"></p>
+    </section>
+
+    <!-- Sección 6: Palabras a Números -->
+    <section>
+        <h1>Palabras a Números</h1>
+        <label for="palabras">Palabras (separadas por coma):</label>
+        <input type="text" id="palabras" placeholder="Ej. uno, dos, tres">
+        <button onclick="palabrasANumeros()">Convertir</button>
+        <p id="resultadoPalabras"></p>
+    </section>
+
+    <!-- Sección 7: Cálculo de Horas Extras -->
+    <section>
+        <h1>Cálculo de Horas Extras</h1>
+        <label for="horasNormales">Horas normales trabajadas:</label>
+        <input type="number" id="horasNormales" placeholder="Ingrese horas normales" min="0" step="0.01">
+        <label for="tarifaPorHora">Tarifa por hora normal:</label>
+        <input type="number" id="tarifaPorHora" placeholder="Ingrese tarifa por hora" min="0" step="0.01">
+        <button onclick="calcularHorasExtras()">Calcular</button>
+        <p id="resultadoHorasExtras"></p>
+    </section>
+
+    <!-- Sección 8: Reparto de Utilidades -->
+    <section>
+        <h1>Reparto de Utilidades</h1>
+        <label for="salario">Salario mensual:</label>
+        <input type="number" id="salario" placeholder="Ingrese el salario" min="0" step="0.01">
+        <label for="antiguedad">Antigüedad en años:</label>
+        <input type="number" id="antiguedad" placeholder="Ingrese la antigüedad" min="0">
+        <button onclick="calcularUtilidad()">Calcular</button>
+        <p id="resultado"></p>
+    </section>
+
+    <!-- Sección 9: Formulario de Registro -->
+    <section>
+        <h1>Formulario de Registro</h1>
+        <form id="formulario">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+            <br>
+            <label for="comentarios">Comentarios:</label>
+            <textarea id="comentarios" maxlength="50"></textarea>
+            <br>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password">
+            <br>
+            <input type="checkbox" id="aceptar"> Acepto las condiciones del servicio
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Sección 10: Eliminación de Etiquetas Peligrosas -->
+    <section>
+        <h2>Eliminar Etiquetas Peligrosas</h2>
+        <label for="html">Código HTML:</label>
+        <textarea id="html" rows="10" cols="30"></textarea>
+        <button onclick="eliminarEtiquetas()">Eliminar</button>
+        <p id="resultadoEtiquetas"></p>
+    </section>
+
+    <script src="Practicas JS.js"></script>
+</body>
+</html>
